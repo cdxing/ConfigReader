@@ -55,6 +55,10 @@ void ConfigReader::initialize()
   dblValCuts["z_de_high"] = -999.0; 
   dblValCuts["z_tr_low"] = -999.0; 
   dblValCuts["z_tr_high"] = -999.0; 
+  dblValCuts["z_he3_low"] = -999.0; 
+  dblValCuts["z_he3_high"] = -999.0; 
+  dblValCuts["z_he4_low"] = -999.0; 
+  dblValCuts["z_he4_high"] = -999.0; 
 
   dblValCuts["m2_pi_low"] = -999.0; 
   dblValCuts["m2_pi_high"] = -999.0; 
@@ -64,6 +68,10 @@ void ConfigReader::initialize()
   dblValCuts["m2_de_high"] = -999.0; 
   dblValCuts["m2_tr_low"] = -999.0; 
   dblValCuts["m2_tr_high"] = -999.0; 
+  dblValCuts["m2_he3_low"] = -999.0; 
+  dblValCuts["m2_he3_high"] = -999.0; 
+  dblValCuts["m2_he4_low"] = -999.0; 
+  dblValCuts["m2_he4_high"] = -999.0; 
 
   dblValCuts["yCM_norm_pi_low"] = -999.0;
   dblValCuts["yCM_norm_pi_high"] = -999.0;
@@ -117,6 +125,28 @@ void ConfigReader::initialize()
   dblValCuts["yCM_norm_tr_high"] = -999.0;
   dblValCuts["pt_norm_tr_low"] = -999.0; 
   dblValCuts["pt_norm_tr_high"] = -999.0; 
+
+  dblValCuts["yCM_norm_he3_low"] = -999.0;
+  dblValCuts["yCM_norm_he3_high"] = -999.0;
+  dblValCuts["pt_norm_he3_low"] = -999.0; 
+  dblValCuts["pt_norm_he3_high"] = -999.0; 
+  dblValCuts["yCM_yMid_he3_low"] = -999.0;
+  dblValCuts["yCM_yMid_he3_high"] = -999.0;
+  dblValCuts["pt_yMid_he3_low"] = -999.0; 
+  dblValCuts["pt_yMid_he3_high"] = -999.0; 
+  dblValCuts["yCM_yFor_he3_low"] = -999.0;
+  dblValCuts["yCM_yFor_he3_high"] = -999.0;
+  dblValCuts["pt_yFor_he3_low"] = -999.0; 
+  dblValCuts["pt_yFor_he3_high"] = -999.0; 
+  dblValCuts["yCM_yExt_he3_low"] = -999.0;
+  dblValCuts["yCM_yExt_he3_high"] = -999.0;
+  dblValCuts["pt_yExt_he3_low"] = -999.0; 
+  dblValCuts["pt_yExt_he3_high"] = -999.0; 
+
+  dblValCuts["yCM_norm_he4_low"] = -999.0;
+  dblValCuts["yCM_norm_he4_high"] = -999.0;
+  dblValCuts["pt_norm_he4_low"] = -999.0; 
+  dblValCuts["pt_norm_he4_high"] = -999.0; 
 
   dblValCuts["KT_pdt_low"] = -999.0;
   dblValCuts["KT_pdt_high"] = -999.0;
@@ -172,6 +202,10 @@ void ConfigReader::setAllCuts()
   z_de_high = dblValCuts["z_de_high"]; 
   z_tr_low = dblValCuts["z_tr_low"]; 
   z_tr_high = dblValCuts["z_tr_high"]; 
+  z_he3_low = dblValCuts["z_he3_low"]; 
+  z_he3_high = dblValCuts["z_he3_high"]; 
+  z_he4_low = dblValCuts["z_he4_low"]; 
+  z_he4_high = dblValCuts["z_he4_high"]; 
 
   m2_pi_low = dblValCuts["m2_pi_low"]; 
   m2_pi_high = dblValCuts["m2_pi_high"]; 
@@ -181,6 +215,10 @@ void ConfigReader::setAllCuts()
   m2_de_high = dblValCuts["m2_de_high"]; 
   m2_tr_low = dblValCuts["m2_tr_low"]; 
   m2_tr_high = dblValCuts["m2_tr_high"]; 
+  m2_he3_low = dblValCuts["m2_he3_low"]; 
+  m2_he3_high = dblValCuts["m2_he3_high"]; 
+  m2_he4_low = dblValCuts["m2_he4_low"]; 
+  m2_he4_high = dblValCuts["m2_he4_high"]; 
 
   yCM_norm_pi_low = dblValCuts["yCM_norm_pi_low"];
   yCM_norm_pi_high = dblValCuts["yCM_norm_pi_high"];
@@ -235,6 +273,29 @@ void ConfigReader::setAllCuts()
   yCM_norm_tr_high = dblValCuts["yCM_norm_tr_high"];
   pt_norm_tr_low = dblValCuts["pt_norm_tr_low"]; 
   pt_norm_tr_high = dblValCuts["pt_norm_tr_high"]; 
+
+  yCM_norm_he3_low = dblValCuts["yCM_norm_he3_low"];
+  yCM_norm_he3_high = dblValCuts["yCM_norm_he3_high"];
+  pt_norm_he3_low = dblValCuts["pt_norm_he3_low"]; 
+  pt_norm_he3_high = dblValCuts["pt_norm_he3_high"]; 
+
+  yCM_yMid_he3_low = dblValCuts["yCM_yMid_he3_low"];
+  yCM_yMid_he3_high = dblValCuts["yCM_yMid_he3_high"];
+  pt_yMid_he3_low = dblValCuts["pt_yMid_he3_low"]; 
+  pt_yMid_he3_high = dblValCuts["pt_yMid_he3_high"]; 
+  yCM_yFor_he3_low = dblValCuts["yCM_yFor_he3_low"];
+  yCM_yFor_he3_high = dblValCuts["yCM_yFor_he3_high"];
+  pt_yFor_he3_low = dblValCuts["pt_yFor_he3_low"]; 
+  pt_yFor_he3_high = dblValCuts["pt_yFor_he3_high"]; 
+  yCM_yExt_he3_low = dblValCuts["yCM_yExt_he3_low"];
+  yCM_yExt_he3_high = dblValCuts["yCM_yExt_he3_high"];
+  pt_yExt_he3_low = dblValCuts["pt_yExt_he3_low"]; 
+  pt_yExt_he3_high = dblValCuts["pt_yExt_he3_high"]; 
+
+  yCM_norm_he4_low = dblValCuts["yCM_norm_he4_low"];
+  yCM_norm_he4_high = dblValCuts["yCM_norm_he4_high"];
+  pt_norm_he4_low = dblValCuts["pt_norm_he4_low"]; 
+  pt_norm_he4_high = dblValCuts["pt_norm_he4_high"]; 
 
   KT_pdt_low = dblValCuts["KT_pdt_low"];
   KT_pdt_high = dblValCuts["KT_pdt_high"];

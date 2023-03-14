@@ -64,6 +64,10 @@ class ConfigReader
   Double_t z_de_high;
   Double_t z_tr_low;
   Double_t z_tr_high;
+  Double_t z_he3_low;
+  Double_t z_he3_high;
+  Double_t z_he4_low;
+  Double_t z_he4_high;
   Double_t m2_pi_low;
   Double_t m2_pi_high;
   Double_t m2_ka_low;
@@ -72,6 +76,10 @@ class ConfigReader
   Double_t m2_de_high;
   Double_t m2_tr_low;
   Double_t m2_tr_high;
+  Double_t m2_he3_low;
+  Double_t m2_he3_high;
+  Double_t m2_he4_low;
+  Double_t m2_he4_high;
 
   // Pion
   Double_t yCM_norm_pi_low;
@@ -130,6 +138,34 @@ class ConfigReader
   Double_t yCM_norm_tr_high;
   Double_t pt_norm_tr_low;
   Double_t pt_norm_tr_high;
+
+  // Helium3
+  Double_t yCM_norm_he3_low;
+  Double_t yCM_norm_he3_high;
+  Double_t pt_norm_he3_low;
+  Double_t pt_norm_he3_high;
+  Double_t yCM_yMid_he3_low;
+  Double_t yCM_yMid_he3_high;
+  Double_t pt_yMid_he3_low;
+  Double_t pt_yMid_he3_high;
+  Double_t yCM_yFor_he3_low;
+  Double_t yCM_yFor_he3_high;
+  Double_t pt_yFor_he3_low;
+  Double_t pt_yFor_he3_high;
+  Double_t yCM_yExt_he3_low;
+  Double_t yCM_yExt_he3_high;
+  Double_t pt_yExt_he3_low;
+  Double_t pt_yExt_he3_high;
+
+  // Helium3
+  Double_t yCM_norm_he4_low;
+  Double_t yCM_norm_he4_high;
+  Double_t pt_norm_he4_low;
+  Double_t pt_norm_he4_high;
+ // Double_t yCM_yMid_he4_low;
+ // Double_t yCM_yMid_he4_high;
+ // Double_t pt_yMid_he4_low;
+ // Double_t pt_yMid_he4_high;
 
   // Proton, Deuteron, and Triton
   Double_t KT_pdt_low;
